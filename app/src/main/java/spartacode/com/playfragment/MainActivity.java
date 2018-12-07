@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements FragmentA.Communi
         fm = getSupportFragmentManager();
         fm.beginTransaction().add(R.id.layout_container,fragmentB,"fragment2").commit();
         fm.beginTransaction().add(R.id.layout_container,fragmentA,"fragment1").commit();
+        Log.e("Hey", "onCreate: " );
     }
 
     @Override
